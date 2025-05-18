@@ -161,12 +161,38 @@ public class PedExt : IComplexTaskable, ISeatAssignable
         bool toSell = false;
         bool toSellPlayerHas = false;
         bool toBuy = false;
+
         if (HasMenu)
         {
             toSell = ShopMenu.Items.Any(x => x.Sellable);
             toBuy = ShopMenu.Items.Any(x => x.Purchaseable);
             toSellPlayerHas = ShopMenu.Items.Any(x => x.Sellable && player.Inventory.Get(x.ModItem) != null && x.NumberOfItemsToPurchaseFromPlayer > 0);
         }
+
+        if (toSellPlayerHas && DistanceToPlayer <= 20f && !IsInVehicle && RandomItems.RandomPercent(90))
+        {
+            NativeFunction.Natives.TASK_GO_TO_ENTITY(Pedestrian, player.Character, -1, 2.0f, 1.0f, 0, 0);
+            GameFiber.StartNew(() =>
+            {
+                GameFiber.Sleep(2000);
+                if (Pedestrian.Exists())
+                {
+                    NativeFunction.Natives.TASK_TURN_PED_TO_FACE_ENTITY(Pedestrian, player.Character, -1);
+                    GameFiber.Sleep(2000);
+                    if (Pedestrian.Exists())
+                    {
+                        NativeFunction.Natives.TASK_STAND_STILL(Pedestrian);
+                        GameFiber.Sleep(5000);
+                        if (Pedestrian.Exists())
+                        {
+                            SetupTransactionItems(ShopMenu, false);
+                            NativeFunction.Natives.CLEAR_PED_TASKS(Pedestrian);
+                        }
+                    }
+                }
+            });
+        }
+
         string promptText;
         if (toSell && toBuy)
         {
@@ -184,15 +210,13 @@ public class PedExt : IComplexTaskable, ISeatAssignable
         {
             promptText = $"Talk to";
         }
+
         promptText += $" {FormattedName}";
         if (toSellPlayerHas && Settings.SettingsManager.ActivitySettings.ShowInPromptWhenPedsWantToBuyItemsYouHave)
         {
             promptText += " (!)";
         }
-        //if(IsInVehicle && IsDriver)
-        //{
-        //    promptText += " (R)";
-        //}
+
         return promptText;
     }
     public string TransactionPrompt(IButtonPromptable player)

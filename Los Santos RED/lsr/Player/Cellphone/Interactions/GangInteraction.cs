@@ -55,6 +55,8 @@ public class GangInteraction : IContactMenuInteraction
     private UIMenuItem RequestBackupMenu;
     private UIMenu BackupSubMenu;
     private UIMenu DrugMeetSubMenu;
+    private UIMenu DrugDealersSubMenu;
+    private GangBackup activeDrugDealers;
 
     private string TargetGangDescription => $"Choose a target gang~n~~n~~r~RED~s~ Gangs are enemies~n~~o~ORANGE~s~ Gangs are hostile~n~~g~GREEN~s~ Gangs are friendly";
     private string GangDescription => $"~r~RED~s~ Gangs are enemies~n~~o~ORANGE~s~ Gangs are hostile~n~~g~GREEN~s~ Gangs are friendly";
@@ -114,13 +116,27 @@ public class GangInteraction : IContactMenuInteraction
         }
         else if (ActiveGangReputation.ReputationLevel >= ActiveGangReputation.FriendlyRepLevel)
         {
-            AddFriendlyRepItems();        
+            AddFriendlyRepItems();
         }
         else
         {
             AddNeutralRepItems();
         }
         GangMenu.Visible = true;
+    }
+
+    private void RequestDrugDealers(int minMembers)
+    {
+        if (activeDrugDealers != null)
+        {
+            activeDrugDealers.Dispose();
+            activeDrugDealers = null;
+        }
+
+        // Revert to the previous stable implementation
+        activeDrugDealers = new GangBackup(World, (IGangBackupable)Player, ActiveGang, minMembers, null);
+        activeDrugDealers.Setup();
+        Player.CellPhone.AddPhoneResponse(ActiveGang.Contact.Name, ActiveGang.Contact.IconName, "I’ll send some dealers your way.");
     }
 
     private void AddNeutralRepItems()
@@ -150,7 +166,7 @@ public class GangInteraction : IContactMenuInteraction
             AddJobItems();
             if(ActiveGangReputation.CanAskToJoin)
             {
-                GangJoinMenu = new UIMenuItem("Join gang", "Prove your worth and become a member of the gang");
+                GangJoinMenu = new UIMenuItem("Join Gang", "Prove your worth and become a member of the gang");
                 GangJoinMenu.Activated += (sender, selectedItem) =>
                 {
                     Player.PlayerTasks.GangTasks.StartGangProveWorth(ActiveGang, 2, GangContact);
@@ -158,57 +174,32 @@ public class GangInteraction : IContactMenuInteraction
                 };
                 GangMenu.AddItem(GangJoinMenu);
             }
-        }
-        RequestGangDen = new UIMenuItem("Request Invite", "Request the location of the gang den");
-        RequestGangDen.Activated += (sender, selectedItem) =>
-        {
-            RequestDenAddress();
-            sender.Visible = false;
-        };
-        GangMenu.AddItem(RequestGangDen);
-        if (ActiveGangReputation.IsMember)
-        {
-
-            BackupSubMenu = MenuPool.AddSubMenu(GangMenu, "Request Backup");
-            BackupSubMenu.RemoveBanner();
-
-
-
-            UIMenuNumericScrollerItem<int> backupCountMenu = new UIMenuNumericScrollerItem<int>("Requested Members", "Set the number of members you want to be dispatched to your location.", 1, 7, 1) { Value = 2 };
-            BackupSubMenu.AddItem(backupCountMenu);
-
-            List<VehicleNameSelect> vehicleNameList = new List<VehicleNameSelect>();
-            vehicleNameList.Add(new VehicleNameSelect("") { VehicleModelName = "Random" });
-            foreach (DispatchableVehicle dv in ActiveGang.Vehicles.Where(x => !x.RequiresDLC || Settings.SettingsManager.PlayerOtherSettings.AllowDLCVehicles))
+            RequestGangDen = new UIMenuItem("Request Invite", "Request the location of the gang den");
+            RequestGangDen.Activated += (sender, selectedItem) =>
             {
-                VehicleNameSelect vns = new VehicleNameSelect(dv.ModelName);
-                vns.UpdateItems();
-                vehicleNameList.Add(vns);
-            }
-            UIMenuListScrollerItem<VehicleNameSelect> BackupVehiclesMenu = new UIMenuListScrollerItem<VehicleNameSelect>("Vehicle", $"Request a specific vehicle.", vehicleNameList);
-            BackupSubMenu.AddItem(BackupVehiclesMenu);
-            UIMenuItem StartBackupMenu = new UIMenuItem("Request Backup", "Request gang backup using the parameters.");
-            StartBackupMenu.Activated += (sender, selectedItem) =>
-            {
-                RequestBackup(backupCountMenu.Value, BackupVehiclesMenu.SelectedItem.ModelName);
+                RequestDenAddress();
                 sender.Visible = false;
             };
-            BackupSubMenu.AddItem(StartBackupMenu);
-
-
-
-
-            LeaveGangMenu = new UIMenuItem("Leave Gang", "Inform the gang that you no longer want to be a member");
-            LeaveGangMenu.Activated += (sender, selectedItem) =>
-            {
-                if (LeaveGang())
-                {
-                    sender.Visible = false;
-                }
-            };
-            GangMenu.AddItem(LeaveGangMenu);
+            GangMenu.AddItem(RequestGangDen);
         }
+
+        // Add Request Drug Dealers submenu
+        DrugDealersSubMenu = MenuPool.AddSubMenu(GangMenu, "Request Drug Dealers");
+        DrugDealersSubMenu.RemoveBanner();
+        UIMenuNumericScrollerItem<int> dealerCountMenu = new UIMenuNumericScrollerItem<int>("Requested Dealers", "Set the number of dealers you want to be dispatched to your location.", 1, 3, 1)
+        {
+            Value = 1
+        };
+        DrugDealersSubMenu.AddItem(dealerCountMenu);
+        UIMenuItem StartDrugDealersMenu = new UIMenuItem("Request Dealers", "Request gang drug dealers using the parameters.");
+        StartDrugDealersMenu.Activated += (sender, selectedItem) =>
+        {
+            RequestDrugDealers(dealerCountMenu.Value);
+            sender.Visible = false;
+        };
+        DrugDealersSubMenu.AddItem(StartDrugDealersMenu);
     }
+
     private void RequestBackup(int minMembers, string requiredModelName)
     {
         Player.GangBackupManager.RequestBackup(ActiveGang, minMembers, requiredModelName);
@@ -356,7 +347,7 @@ public class GangInteraction : IContactMenuInteraction
         CopHitSubMenu.AddItem(StartTaskMenu);
     }
     private void AddGangHitSubMenu()
-    {  
+    {
         GangHitSubMenu = MenuPool.AddSubMenu(JobsSubMenu, "Gang Hit");
         JobsSubMenu.MenuItems[JobsSubMenu.MenuItems.Count() - 1].Description = $"Do a hit for the gang on a rival.";
         JobsSubMenu.MenuItems[JobsSubMenu.MenuItems.Count() - 1].RightLabel = $"~HUD_COLOUR_GREENDARK~{ActiveGang.HitPaymentMin:C0}-{ActiveGang.HitPaymentMax:C0}~s~";
@@ -416,9 +407,7 @@ public class GangInteraction : IContactMenuInteraction
                 {
                     extra = "~g~";
                 }
-                //EntryPoint.WriteToConsole($"REPUTATION: {gr.ReputationLevel}~s~");
             }
-            //EntryPoint.WriteToConsole($"{extra}{gang.ShortName}~s~");
             toReturn.Add(new GangDisplay(gang, $"{extra}{gang.ShortName}~s~"));
         }
 
@@ -683,7 +672,6 @@ public class GangInteraction : IContactMenuInteraction
                     $"{myDen.FullStreetAddress}.",
                     $"It's on {myDen.FullStreetAddress} come see us.",
                     $"The {ActiveGang.DenName}? It's on {myDen.FullStreetAddress}.",
-
                     };
             Player.CellPhone.AddPhoneResponse(ActiveGang.Contact.Name, ActiveGang.Contact.IconName, Replies.PickRandom());
         }
@@ -722,5 +710,4 @@ public class GangInteraction : IContactMenuInteraction
         }
     }
 
-    }
-
+}

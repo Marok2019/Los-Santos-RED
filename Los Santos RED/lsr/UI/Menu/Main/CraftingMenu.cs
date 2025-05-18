@@ -90,23 +90,22 @@ public class CraftingMenu : ModUIMenu
         {
             craftingFlag = LocationInteractablePlayer.CurrentVehicle.VehicleModelName;
         }
-        foreach(CraftableItem craftableItem in CraftableItems.Items)
+
+        foreach (CraftableItem craftableItem in CraftableItems.Items)
         {
             if (!string.IsNullOrEmpty(craftingFlag) && craftableItem.CraftingFlags != null && !craftableItem.CraftingFlags.Contains(craftingFlag))
             {
                 continue;
             }
-            if (craftableItem.CraftingFlags != null && craftableItem.CraftingFlags.Count > 0 && !craftableItem.CraftingFlags.Contains(craftingFlag))
-            {
-                continue;
-            }
+
             int quantity = 0;
             int ingredientsSatisfied = 0;
             int ingredientsToSatisfy = craftableItem.Ingredients.Count;
-            foreach(Ingredient ingredient in craftableItem.Ingredients)
+
+            foreach (Ingredient ingredient in craftableItem.Ingredients)
             {
                 InventoryItem ingredientInInventory = LocationInteractablePlayer.Inventory.ItemsList.Find(x => x.ModItem.Name == ingredient.IngredientName);
-                if(ingredientInInventory == null)
+                if (ingredientInInventory == null)
                 {
                     break;
                 }
@@ -125,39 +124,43 @@ public class CraftingMenu : ModUIMenu
                     ingredientsSatisfied++;
                 }
             }
-            if (ingredientsSatisfied != ingredientsToSatisfy || quantity==0)
+
+            UIMenu uIMenu = GetSubMenuForCraftableItem(craftableItem.Category, categoryMenus);
+
+            if (ingredientsSatisfied != ingredientsToSatisfy || quantity == 0)
             {
-                UIMenu uIMenu = GetSubMenuForCraftableItem(craftableItem.Category, categoryMenus);
-                UIMenuItem itemMenu = new UIMenuItem(craftableItem.Name, craftableItem.GetIngredientDescription(1,ModItems));
-                itemMenu.Enabled = false;
-                uIMenu.AddItem(itemMenu);
-                continue;
+                UIMenuItem disabledItemMenu = new UIMenuItem(craftableItem.Name, craftableItem.GetIngredientDescription(1, ModItems));
+                disabledItemMenu.Description += $"\n~g~Result: {craftableItem.Resultant} x{craftableItem.ResultantAmount}~s~";
+                disabledItemMenu.Enabled = false;
+                uIMenu.AddItem(disabledItemMenu);
             }
-            if (quantity > 0)
+            else
             {
-                UIMenu uIMenu = GetSubMenuForCraftableItem(craftableItem.Category, categoryMenus);
                 if (craftableItem.SingleUnit)
                 {
-                    UIMenuItem itemMenu = new UIMenuItem(craftableItem.Name, craftableItem.GetIngredientDescription(1,ModItems));
-                    itemMenu.Activated += (s, e) =>
+                    UIMenuItem enabledItemMenu = new UIMenuItem(craftableItem.Name, craftableItem.GetIngredientDescription(1, ModItems));
+                    enabledItemMenu.Description += $"\n~g~Result: {craftableItem.Resultant} x{craftableItem.ResultantAmount}~s~";
+                    enabledItemMenu.Activated += (s, e) =>
                     {
-                        Crafting.CraftItem(itemMenu.Text, craftingFlag: craftingFlag);
+                        Crafting.CraftItem(enabledItemMenu.Text, craftingFlag: craftingFlag);
                     };
-                    uIMenu.AddItem(itemMenu);
+                    uIMenu.AddItem(enabledItemMenu);
                 }
                 else
                 {
-                    UIMenuNumericScrollerItem<int> itemMenu = new UIMenuNumericScrollerItem<int>(craftableItem.Name, craftableItem.GetIngredientDescription(1,ModItems), 1, quantity, 1);
-                    itemMenu.Value = 1;
-                    itemMenu.IndexChanged += (s, oldIndex, newIndex) =>
+                    UIMenuNumericScrollerItem<int> numericItemMenu = new UIMenuNumericScrollerItem<int>(craftableItem.Name, craftableItem.GetIngredientDescription(1, ModItems), 1, quantity, 1);
+                    numericItemMenu.Description += $"\n~g~Result: {craftableItem.Resultant} x{craftableItem.ResultantAmount}~s~";
+                    numericItemMenu.Value = 1;
+                    numericItemMenu.IndexChanged += (s, oldIndex, newIndex) =>
                     {
-                        itemMenu.Description = craftableItem.GetIngredientDescription(newIndex + 1, ModItems);
+                        numericItemMenu.Description = craftableItem.GetIngredientDescription(newIndex + 1, ModItems) +
+                                                      $"\n~g~Result: {craftableItem.Resultant} x{craftableItem.ResultantAmount * (newIndex + 1)}~s~";
                     };
-                    itemMenu.Activated += (s, e) =>
+                    numericItemMenu.Activated += (s, e) =>
                     {
-                        Crafting.CraftItem(itemMenu.Text, itemMenu.Value, craftingFlag: craftingFlag);
+                        Crafting.CraftItem(numericItemMenu.Text, numericItemMenu.Value, craftingFlag: craftingFlag);
                     };
-                    uIMenu.AddItem(itemMenu);
+                    uIMenu.AddItem(numericItemMenu);
                 }
             }
         }
