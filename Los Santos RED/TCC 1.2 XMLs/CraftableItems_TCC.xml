@@ -1,0 +1,226 @@
+<ArrayOfCraftableItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CraftableItem>
+    <Name>Cut Methamphetamine</Name>
+    <Resultant>Methamphetamine</Resultant>
+    <ResultantAmount>5</ResultantAmount>
+    <SingleUnit>false</SingleUnit>
+    <Category>Narcotics</Category>
+    <Ingredients>
+      <Ingredient>
+        <IngredientName>Pure Methamphetamine</IngredientName>
+        <Quantity>3</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>Methylsulfonylmethane</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+    </Ingredients>
+    <Cooldown>2000</Cooldown>
+    <CrimeId>ManufacturingDrugs</CrimeId>
+    <CraftingFlags>
+      <string>DrugLab</string>
+      <string>Stove</string>
+	   <string>JOURNEY</string>
+    </CraftingFlags>
+  </CraftableItem>
+  <CraftableItem>
+    <Name>Cut Heroin</Name>
+    <Resultant>Heroin</Resultant>
+    <ResultantAmount>5</ResultantAmount>
+    <SingleUnit>false</SingleUnit>
+    <Category>Narcotics</Category>
+    <Ingredients>
+      <Ingredient>
+        <IngredientName>Pure Heroin</IngredientName>
+        <Quantity>3</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>Lactose</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+    </Ingredients>
+    <Cooldown>2000</Cooldown>
+    <CrimeId>ManufacturingDrugs</CrimeId>
+    <CraftingFlags>
+      <string>DrugLab</string>
+      <string>Stove</string>
+	   <string>JOURNEY</string>
+    </CraftingFlags>
+  </CraftableItem>
+  <CraftableItem>
+    <Name>Cut Cocaine</Name>
+    <Resultant>Cocaine</Resultant>
+    <ResultantAmount>3</ResultantAmount>
+    <SingleUnit>false</SingleUnit>
+    <Category>Narcotics</Category>
+    <Ingredients>
+      <Ingredient>
+        <IngredientName>Pure Cocaine</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>Baking Soda</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+    </Ingredients>
+    <Cooldown>2000</Cooldown>
+    <CrimeId>ManufacturingDrugs</CrimeId>
+    <CraftingFlags>
+      <string>DrugLab</string>
+      <string>Stove</string>
+	   <string>JOURNEY</string>
+    </CraftingFlags>
+  </CraftableItem>
+  <CraftableItem>
+    <Name>Crack</Name>
+    <Resultant>Crack</Resultant>
+    <ResultantAmount>5</ResultantAmount>
+    <SingleUnit>false</SingleUnit>
+    <Category>Narcotics</Category>
+    <Ingredients>
+      <Ingredient>
+        <IngredientName>Cocaine</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>Baking Soda</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+    </Ingredients>
+    <Cooldown>1500</Cooldown>
+    <CrimeId>ManufacturingDrugs</CrimeId>
+    <CraftingFlags>
+      <string>DrugLab</string>
+      <string>Stove</string>
+	  <string>JOURNEY</string>
+    </CraftingFlags>
+  </CraftableItem>
+  <CraftableItem>
+    <Name>Premium Crack</Name>
+    <Resultant>Crack</Resultant>
+    <ResultantAmount>11</ResultantAmount>
+    <SingleUnit>false</SingleUnit>
+    <Category>Narcotics</Category>
+    <Ingredients>
+      <Ingredient>
+        <IngredientName>Pure Cocaine</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>Baking Soda</IngredientName>
+        <Quantity>2</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+	  <Ingredient>
+        <IngredientName>pH strip</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+    </Ingredients>
+    <Cooldown>1500</Cooldown>
+    <CrimeId>ManufacturingDrugs</CrimeId>
+    <CraftingFlags>
+      <string>DrugLab</string>
+      <string>Stove</string>
+	  <string>JOURNEY</string>
+    </CraftingFlags>
+  </CraftableItem>
+  <CraftableItem>
+    <Name>Counterfeit Percs</Name>
+    <Resultant>Percocet 30mg</Resultant>
+    <ResultantAmount>4</ResultantAmount>
+    <SingleUnit>false</SingleUnit>
+	<Category>Narcotics</Category>
+    <Ingredients>
+      <Ingredient>
+        <IngredientName>Pure Percocet 30mg</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>Fentanyl</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+	  <Ingredient>
+        <IngredientName>Corn Starch</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+	  <Ingredient>
+        <IngredientName>Pill Press</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>false</IsConsumed>
+      </Ingredient>
+    </Ingredients>
+    <Cooldown>1000</Cooldown>
+    <CrimeId>ManufacturingDrugs</CrimeId>
+	<CraftingFlags>
+      <string>DrugLab</string>
+      <string>Stove</string>
+    </CraftingFlags>
+  </CraftableItem>
+  <CraftableItem>
+    <Name>Lean</Name>
+    <Resultant>Lean</Resultant>
+    <ResultantAmount>1</ResultantAmount>
+    <SingleUnit>false</SingleUnit>
+    <Ingredients>
+      <Ingredient>
+        <IngredientName>Cup of Sprunk</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>P's &amp; Q's</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>Chesty</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+    </Ingredients>
+    <Cooldown>2000</Cooldown>
+  </CraftableItem>
+  <CraftableItem>
+    <Name>DIY pipe bomb</Name>
+    <Resultant>Pipe Bomb</Resultant>
+    <ResultantAmount>1</ResultantAmount>
+    <SingleUnit>true</SingleUnit>
+    <Ingredients>
+      <Ingredient>
+        <IngredientName>Metal Tube</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>Flint Duct Tape</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>Fuse</IngredientName>
+        <Quantity>1</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+      <Ingredient>
+        <IngredientName>Scrap Metal</IngredientName>
+        <Quantity>3</Quantity>
+        <IsConsumed>true</IsConsumed>
+      </Ingredient>
+    </Ingredients>
+    <Cooldown>5000</Cooldown>
+    <CrimeId>TerroristActivity</CrimeId>
+  </CraftableItem>
+</ArrayOfCraftableItem>
