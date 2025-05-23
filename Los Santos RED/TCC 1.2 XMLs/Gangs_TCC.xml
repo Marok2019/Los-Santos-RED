@@ -125,12 +125,12 @@
     <LongGunsID>MadrazoLongGuns</LongGunsID>
     <VehiclesID>CartelVehicles</VehiclesID>
     <MinimumRep>-5000</MinimumRep>
-    <MaximumRep>16000</MaximumRep>
+    <MaximumRep>24000</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>12000</FriendlyRepLevel>
-    <MemberOfferRepLevel>15000</MemberOfferRepLevel>
+    <MemberOfferRepLevel>18000</MemberOfferRepLevel>
     <HitSquadRep>-2500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -229,12 +229,12 @@
     <LongGunsID>VagosLongGuns</LongGunsID>
     <VehiclesID>VagosVehicles</VehiclesID>
     <MinimumRep>-5000</MinimumRep>
-    <MaximumRep>7000</MaximumRep>
+    <MaximumRep>7500</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>3750</FriendlyRepLevel>
-    <MemberOfferRepLevel>6000</MemberOfferRepLevel>
+    <MemberOfferRepLevel>5625</MemberOfferRepLevel>
     <HitSquadRep>-4500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -333,12 +333,12 @@
     <LongGunsID>FamiliesLongGuns</LongGunsID>
     <VehiclesID>FamiliesVehicles</VehiclesID>
     <MinimumRep>-5000</MinimumRep>
-    <MaximumRep>9000</MaximumRep>
+    <MaximumRep>7000</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
-    <FriendlyRepLevel>5250</FriendlyRepLevel>
-    <MemberOfferRepLevel>8000</MemberOfferRepLevel>
+    <FriendlyRepLevel>3500</FriendlyRepLevel>
+    <MemberOfferRepLevel>5250</MemberOfferRepLevel>
     <HitSquadRep>-4500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -437,12 +437,12 @@
     <LongGunsID>BallasLongGuns</LongGunsID>
     <VehiclesID>BallasVehicles</VehiclesID>
     <MinimumRep>-5000</MinimumRep>
-    <MaximumRep>4500</MaximumRep>
+    <MaximumRep>9500</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
-    <FriendlyRepLevel>2000</FriendlyRepLevel>
-    <MemberOfferRepLevel>3500</MemberOfferRepLevel>
+    <FriendlyRepLevel>4750</FriendlyRepLevel>
+    <MemberOfferRepLevel>7125</MemberOfferRepLevel>
     <HitSquadRep>-4500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -541,12 +541,12 @@
     <LongGunsID>MarabuntaLongGuns</LongGunsID>
     <VehiclesID>MarabuntaVehicles</VehiclesID>
     <MinimumRep>-5000</MinimumRep>
-    <MaximumRep>14500</MaximumRep>
+    <MaximumRep>21000</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>10500</FriendlyRepLevel>
-    <MemberOfferRepLevel>13500</MemberOfferRepLevel>
+    <MemberOfferRepLevel>17250</MemberOfferRepLevel>
     <HitSquadRep>-4500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -650,8 +650,8 @@
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
-    <FriendlyRepLevel>2000</FriendlyRepLevel>
-    <MemberOfferRepLevel>3500</MemberOfferRepLevel>
+    <FriendlyRepLevel>2250</FriendlyRepLevel>
+    <MemberOfferRepLevel>3375</MemberOfferRepLevel>
     <HitSquadRep>-4500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -750,7 +750,7 @@
     <LongGunsID>TriadsLongGuns</LongGunsID>
     <VehiclesID>TriadVehicles</VehiclesID>
     <MinimumRep>-5000</MinimumRep>
-    <MaximumRep>5500</MaximumRep>
+    <MaximumRep>9000</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
@@ -958,12 +958,12 @@
     <LongGunsID>KkangpaeLongGuns</LongGunsID>
     <VehiclesID>KoreanVehicles</VehiclesID>
     <MinimumRep>-5000</MinimumRep>
-    <MaximumRep>8000</MaximumRep>
+    <MaximumRep>9000</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>4500</FriendlyRepLevel>
-    <MemberOfferRepLevel>7000</MemberOfferRepLevel>
+    <MemberOfferRepLevel>6750</MemberOfferRepLevel>
     <HitSquadRep>-4500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -1168,12 +1168,12 @@
     <LongGunsID>MafiaLongGuns</LongGunsID>
     <VehiclesID>GambettiVehicles</VehiclesID>
     <MinimumRep>-8000</MinimumRep>
-    <MaximumRep>7000</MaximumRep>
+    <MaximumRep>13500</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
-    <FriendlyRepLevel>3750</FriendlyRepLevel>
-    <MemberOfferRepLevel>6000</MemberOfferRepLevel>
+    <FriendlyRepLevel>6750</FriendlyRepLevel>
+    <MemberOfferRepLevel>10125</MemberOfferRepLevel>
     <HitSquadRep>-6500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -1273,12 +1273,12 @@
     <LongGunsID>MafiaLongGuns</LongGunsID>
     <VehiclesID>PavanoVehicles</VehiclesID>
     <MinimumRep>-8000</MinimumRep>
-    <MaximumRep>11000</MaximumRep>
+    <MaximumRep>15000</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>7500</FriendlyRepLevel>
-    <MemberOfferRepLevel>10000</MemberOfferRepLevel>
+    <MemberOfferRepLevel>11250</MemberOfferRepLevel>
     <HitSquadRep>-6500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -1378,12 +1378,12 @@
     <LongGunsID>MafiaLongGuns</LongGunsID>
     <VehiclesID>LupisellaVehicles</VehiclesID>
     <MinimumRep>-8000</MinimumRep>
-    <MaximumRep>11500</MaximumRep>
+    <MaximumRep>16000</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>8000</FriendlyRepLevel>
-    <MemberOfferRepLevel>10500</MemberOfferRepLevel>
+    <MemberOfferRepLevel>12000</MemberOfferRepLevel>
     <HitSquadRep>-6500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -1483,12 +1483,12 @@
     <LongGunsID>MafiaLongGuns</LongGunsID>
     <VehiclesID>MessinaVehicles</VehiclesID>
     <MinimumRep>-8000</MinimumRep>
-    <MaximumRep>12000</MaximumRep>
+    <MaximumRep>17000</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>8500</FriendlyRepLevel>
-    <MemberOfferRepLevel>11000</MemberOfferRepLevel>
+    <MemberOfferRepLevel>12750</MemberOfferRepLevel>
     <HitSquadRep>-6500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -1589,12 +1589,12 @@
     <LongGunsID>MafiaLongGuns</LongGunsID>
     <VehiclesID>AncelottiVehicles</VehiclesID>
     <MinimumRep>-8000</MinimumRep>
-    <MaximumRep>12500</MaximumRep>
+    <MaximumRep>18000</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>9000</FriendlyRepLevel>
-    <MemberOfferRepLevel>11500</MemberOfferRepLevel>
+    <MemberOfferRepLevel>13500</MemberOfferRepLevel>
     <HitSquadRep>-6500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -1692,13 +1692,13 @@
     <SideArmsID>FamiliesSidearms</SideArmsID>
     <LongGunsID>FamiliesLongGuns</LongGunsID>
     <VehiclesID>CartelVehicles</VehiclesID>
-    <MinimumRep>-3000</MinimumRep>
-    <MaximumRep>13000</MaximumRep>
+    <MinimumRep>-12000</MinimumRep>
+    <MaximumRep>18000</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>9000</FriendlyRepLevel>
-    <MemberOfferRepLevel>12000</MemberOfferRepLevel>
+    <MemberOfferRepLevel>13500</MemberOfferRepLevel>
     <HitSquadRep>-2500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -1796,13 +1796,13 @@
     <SideArmsID>FamiliesSidearms</SideArmsID>
     <LongGunsID>FamiliesLongGuns</LongGunsID>
     <VehiclesID>ArmeniaVehicles</VehiclesID>
-    <MinimumRep>-3000</MinimumRep>
-    <MaximumRep>13750</MaximumRep>
+    <MinimumRep>-12000</MinimumRep>
+    <MaximumRep>19500</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>9750</FriendlyRepLevel>
-    <MemberOfferRepLevel>12750</MemberOfferRepLevel>
+    <MemberOfferRepLevel>14625</MemberOfferRepLevel>
     <HitSquadRep>-2500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>
@@ -1901,12 +1901,12 @@
     <LongGunsID>FamiliesLongGuns</LongGunsID>
     <VehiclesID>YardieVehicles</VehiclesID>
     <MinimumRep>-3000</MinimumRep>
-    <MaximumRep>7000</MaximumRep>
+    <MaximumRep>7500</MaximumRep>
     <StartingRep>0</StartingRep>
     <HostileRepLevel>-200</HostileRepLevel>
     <NeutralRepLevel>0</NeutralRepLevel>
     <FriendlyRepLevel>3750</FriendlyRepLevel>
-    <MemberOfferRepLevel>6000</MemberOfferRepLevel>
+    <MemberOfferRepLevel>5625</MemberOfferRepLevel>
     <HitSquadRep>-2500</HitSquadRep>
     <AddAmbientRep>true</AddAmbientRep>
     <GameTimeToRecoverAmbientRep>5000</GameTimeToRecoverAmbientRep>

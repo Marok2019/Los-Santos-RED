@@ -28211,22 +28211,26 @@
       <Name>VagosDenMenu</Name>
       <GroupName />
       <Items>
-        <MenuItem>
+        <MenuItem xsi:type="VariablePriceMenuItem">
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
           <NumberOfItemsPurchasedByPlayer>0</NumberOfItemsPurchasedByPlayer>
           <ModItemName>Pure Heroin</ModItemName>
-          <PurchasePrice>75</PurchasePrice>
-          <SalesPrice>70</SalesPrice>
-          <IsIllicilt>false</IsIllicilt>
+          <PurchasePrice>-1</PurchasePrice>
+          <SalesPrice>-1</SalesPrice>
+          <IsIllicilt>true</IsIllicilt>
           <Extras />
           <SubPrice>1</SubPrice>
-          <SubAmount>30</SubAmount>
-          <MinimumPurchaseAmount>20</MinimumPurchaseAmount>
-          <MaximumPurchaseAmount>40</MaximumPurchaseAmount>
-          <PurchaseIncrement>10</PurchaseIncrement>
-          <NumberOfItemsToSellToPlayer>40</NumberOfItemsToSellToPlayer>
-          <NumberOfItemsToPurchaseFromPlayer>48</NumberOfItemsToPurchaseFromPlayer>
+          <SubAmount>20</SubAmount>
+          <MinimumPurchaseAmount>6</MinimumPurchaseAmount>
+          <MaximumPurchaseAmount>18</MaximumPurchaseAmount>
+          <PurchaseIncrement>3</PurchaseIncrement>
+          <NumberOfItemsToSellToPlayer>18</NumberOfItemsToSellToPlayer>
+          <NumberOfItemsToPurchaseFromPlayer>7</NumberOfItemsToPurchaseFromPlayer>
           <IsFree>false</IsFree>
+          <MinSalesPrice>68</MinSalesPrice>
+          <MaxSalesPrice>72</MaxSalesPrice>
+          <MinPurchasePrice>73</MinPurchasePrice>
+          <MaxPurchasePrice>77</MaxPurchasePrice>
         </MenuItem>
 		<MenuItem>
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
@@ -28752,6 +28756,29 @@
           <MinPurchasePrice>110</MinPurchasePrice>
           <MaxPurchasePrice>121</MaxPurchasePrice>
         </MenuItem>
+        <MenuItem xsi:type="VariablePriceMenuItem">
+          <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
+          <NumberOfItemsPurchasedByPlayer>0</NumberOfItemsPurchasedByPlayer>
+          <ModItemName>Pure Heroin</ModItemName>
+          <PurchasePrice>-1</PurchasePrice>
+          <SalesPrice>-1</SalesPrice>
+          <IsIllicilt>true</IsIllicilt>
+          <Extras />
+          <SubPrice>1</SubPrice>
+          <SubAmount>20</SubAmount>
+          <MinimumPurchaseAmount>6</MinimumPurchaseAmount>
+          <MaximumPurchaseAmount>18</MaximumPurchaseAmount>
+          <PurchaseIncrement>3</PurchaseIncrement>
+          <NumberOfItemsToSellToPlayer>18</NumberOfItemsToSellToPlayer>
+          <NumberOfItemsToPurchaseFromPlayer>7</NumberOfItemsToPurchaseFromPlayer>
+          <IsFree>false</IsFree>
+          <MinSalesPrice>68</MinSalesPrice>
+          <MaxSalesPrice>72</MaxSalesPrice>
+          <MinPurchasePrice>73</MinPurchasePrice>
+          <MaxPurchasePrice>77</MaxPurchasePrice>
+        </MenuItem>
+
+
         <MenuItem>
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
           <NumberOfItemsPurchasedByPlayer>0</NumberOfItemsPurchasedByPlayer>
@@ -30291,23 +30318,28 @@
       <Name>TriadsDenMenu</Name>
       <GroupName />
       <Items>
-	  <MenuItem>
+        <MenuItem xsi:type="VariablePriceMenuItem">
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
           <NumberOfItemsPurchasedByPlayer>0</NumberOfItemsPurchasedByPlayer>
           <ModItemName>Pure Heroin</ModItemName>
-          <PurchasePrice>45</PurchasePrice>
-          <SalesPrice>35</SalesPrice>
-          <IsIllicilt>false</IsIllicilt>
+          <PurchasePrice>-1</PurchasePrice>
+          <SalesPrice>-1</SalesPrice>
+          <IsIllicilt>true</IsIllicilt>
           <Extras />
           <SubPrice>1</SubPrice>
           <SubAmount>30</SubAmount>
-          <MinimumPurchaseAmount>40</MinimumPurchaseAmount>
-          <MaximumPurchaseAmount>92</MaximumPurchaseAmount>
+          <MinimumPurchaseAmount>20</MinimumPurchaseAmount>
+          <MaximumPurchaseAmount>60</MaximumPurchaseAmount>
           <PurchaseIncrement>10</PurchaseIncrement>
-          <NumberOfItemsToSellToPlayer>92</NumberOfItemsToSellToPlayer>
-          <NumberOfItemsToPurchaseFromPlayer>108</NumberOfItemsToPurchaseFromPlayer>
+          <NumberOfItemsToSellToPlayer>60</NumberOfItemsToSellToPlayer>
+          <NumberOfItemsToPurchaseFromPlayer>-1</NumberOfItemsToPurchaseFromPlayer>>
           <IsFree>false</IsFree>
-        </MenuItem>
+          <MinSalesPrice>48</MinSalesPrice>
+          <MaxSalesPrice>52</MaxSalesPrice>
+          <MinPurchasePrice>-1</MinPurchasePrice>
+          <MaxPurchasePrice>-1</MaxPurchasePrice>
+    </MenuItem>
+
 		<MenuItem>
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
           <NumberOfItemsPurchasedByPlayer>0</NumberOfItemsPurchasedByPlayer>
@@ -30948,22 +30980,26 @@
       <Name>KkangpaeDenMenu</Name>
       <GroupName />
       <Items>
-        <MenuItem>
+        <MenuItem xsi:type="VariablePriceMenuItem">
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
           <NumberOfItemsPurchasedByPlayer>0</NumberOfItemsPurchasedByPlayer>
           <ModItemName>Pure Heroin</ModItemName>
-          <PurchasePrice>75</PurchasePrice>
-          <SalesPrice>70</SalesPrice>
-          <IsIllicilt>false</IsIllicilt>
+          <PurchasePrice>-1</PurchasePrice>
+          <SalesPrice>-1</SalesPrice>
+          <IsIllicilt>true</IsIllicilt>
           <Extras />
           <SubPrice>1</SubPrice>
           <SubAmount>30</SubAmount>
-          <MinimumPurchaseAmount>20</MinimumPurchaseAmount>
-          <MaximumPurchaseAmount>40</MaximumPurchaseAmount>
-          <PurchaseIncrement>10</PurchaseIncrement>
-          <NumberOfItemsToSellToPlayer>40</NumberOfItemsToSellToPlayer>
-          <NumberOfItemsToPurchaseFromPlayer>48</NumberOfItemsToPurchaseFromPlayer>
+          <MinimumPurchaseAmount>12</MinimumPurchaseAmount>
+          <MaximumPurchaseAmount>30</MaximumPurchaseAmount>
+          <PurchaseIncrement>6</PurchaseIncrement>
+          <NumberOfItemsToSellToPlayer>30</NumberOfItemsToSellToPlayer>
+          <NumberOfItemsToPurchaseFromPlayer>15</NumberOfItemsToPurchaseFromPlayer>
           <IsFree>false</IsFree>
+          <MinSalesPrice>48</MinSalesPrice>
+          <MaxSalesPrice>52</MaxSalesPrice>
+          <MinPurchasePrice>53</MinPurchasePrice>
+          <MaxPurchasePrice>57</MaxPurchasePrice>
         </MenuItem>
         <MenuItem>
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
@@ -31738,22 +31774,26 @@
       <Name>YardiesDenMenu</Name>
       <GroupName />
       <Items>
-        <MenuItem>
+        <MenuItem xsi:type="VariablePriceMenuItem">
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
           <NumberOfItemsPurchasedByPlayer>0</NumberOfItemsPurchasedByPlayer>
           <ModItemName>Pure Heroin</ModItemName>
-          <PurchasePrice>75</PurchasePrice>
-          <SalesPrice>70</SalesPrice>
-          <IsIllicilt>false</IsIllicilt>
+          <PurchasePrice>-1</PurchasePrice>
+          <SalesPrice>-1</SalesPrice>
+          <IsIllicilt>true</IsIllicilt>
           <Extras />
           <SubPrice>1</SubPrice>
-          <SubAmount>30</SubAmount>
-          <MinimumPurchaseAmount>20</MinimumPurchaseAmount>
-          <MaximumPurchaseAmount>40</MaximumPurchaseAmount>
-          <PurchaseIncrement>1</PurchaseIncrement>
-          <NumberOfItemsToSellToPlayer>40</NumberOfItemsToSellToPlayer>
-          <NumberOfItemsToPurchaseFromPlayer>48</NumberOfItemsToPurchaseFromPlayer>
+          <SubAmount>20</SubAmount>
+          <MinimumPurchaseAmount>6</MinimumPurchaseAmount>
+          <MaximumPurchaseAmount>18</MaximumPurchaseAmount>
+          <PurchaseIncrement>3</PurchaseIncrement>
+          <NumberOfItemsToSellToPlayer>18</NumberOfItemsToSellToPlayer>
+          <NumberOfItemsToPurchaseFromPlayer>7</NumberOfItemsToPurchaseFromPlayer>
           <IsFree>false</IsFree>
+          <MinSalesPrice>68</MinSalesPrice>
+          <MaxSalesPrice>72</MaxSalesPrice>
+          <MinPurchasePrice>73</MinPurchasePrice>
+          <MaxPurchasePrice>77</MaxPurchasePrice>
         </MenuItem>
 		<MenuItem>
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
@@ -33123,23 +33163,6 @@
           <MaxSalesPrice>65</MaxSalesPrice>
           <MinPurchasePrice>67</MinPurchasePrice>
           <MaxPurchasePrice>71</MaxPurchasePrice>
-        </MenuItem>
-		    <MenuItem>
-          <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
-          <NumberOfItemsPurchasedByPlayer>0</NumberOfItemsPurchasedByPlayer>
-          <ModItemName>Pure Heroin</ModItemName>
-          <PurchasePrice>45</PurchasePrice>
-          <SalesPrice>35</SalesPrice>
-          <IsIllicilt>false</IsIllicilt>
-          <Extras />
-          <SubPrice>1</SubPrice>
-          <SubAmount>30</SubAmount>
-          <MinimumPurchaseAmount>40</MinimumPurchaseAmount>
-          <MaximumPurchaseAmount>92</MaximumPurchaseAmount>
-          <PurchaseIncrement>10</PurchaseIncrement>
-          <NumberOfItemsToSellToPlayer>92</NumberOfItemsToSellToPlayer>
-          <NumberOfItemsToPurchaseFromPlayer>108</NumberOfItemsToPurchaseFromPlayer>
-          <IsFree>false</IsFree>
         </MenuItem>
         <MenuItem>
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
@@ -35124,6 +35147,27 @@
           <MaxSalesPrice>80</MaxSalesPrice>
           <MinPurchasePrice>83</MinPurchasePrice>
           <MaxPurchasePrice>88</MaxPurchasePrice>
+        </MenuItem>
+        <MenuItem xsi:type="VariablePriceMenuItem">
+          <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
+          <NumberOfItemsPurchasedByPlayer>0</NumberOfItemsPurchasedByPlayer>
+          <ModItemName>Pure Heroin</ModItemName>
+          <PurchasePrice>-1</PurchasePrice>
+          <SalesPrice>-1</SalesPrice>
+          <IsIllicilt>true</IsIllicilt>
+          <Extras />
+          <SubPrice>1</SubPrice>
+          <SubAmount>30</SubAmount>
+          <MinimumPurchaseAmount>12</MinimumPurchaseAmount>
+          <MaximumPurchaseAmount>30</MaximumPurchaseAmount>
+          <PurchaseIncrement>6</PurchaseIncrement>
+          <NumberOfItemsToSellToPlayer>30</NumberOfItemsToSellToPlayer>
+          <NumberOfItemsToPurchaseFromPlayer>15</NumberOfItemsToPurchaseFromPlayer>
+          <IsFree>false</IsFree>
+          <MinSalesPrice>48</MinSalesPrice>
+          <MaxSalesPrice>52</MaxSalesPrice>
+          <MinPurchasePrice>53</MinPurchasePrice>
+          <MaxPurchasePrice>57</MaxPurchasePrice>
         </MenuItem>
         <MenuItem>
           <NumberOfItemsSoldToPlayer>0</NumberOfItemsSoldToPlayer>
@@ -46733,10 +46777,10 @@
                 <SubPrice>1</SubPrice>
                 <SubAmount>30</SubAmount>
                 <MinimumPurchaseAmount>1</MinimumPurchaseAmount>
-                <MaximumPurchaseAmount>20</MaximumPurchaseAmount>
+                <MaximumPurchaseAmount>6</MaximumPurchaseAmount>
                 <PurchaseIncrement>1</PurchaseIncrement>
-                <NumberOfItemsToSellToPlayer>20</NumberOfItemsToSellToPlayer>
-                <NumberOfItemsToPurchaseFromPlayer>24</NumberOfItemsToPurchaseFromPlayer>
+                <NumberOfItemsToSellToPlayer>6</NumberOfItemsToSellToPlayer>
+                <NumberOfItemsToPurchaseFromPlayer>9</NumberOfItemsToPurchaseFromPlayer>
                 <IsFree>false</IsFree>
               </MenuItem>
             </Items>
@@ -46760,10 +46804,10 @@
                 <SubPrice>1</SubPrice>
                 <SubAmount>30</SubAmount>
                 <MinimumPurchaseAmount>1</MinimumPurchaseAmount>
-                <MaximumPurchaseAmount>24</MaximumPurchaseAmount>
+                <MaximumPurchaseAmount>3</MaximumPurchaseAmount>
                 <PurchaseIncrement>1</PurchaseIncrement>
-                <NumberOfItemsToSellToPlayer>24</NumberOfItemsToSellToPlayer>
-                <NumberOfItemsToPurchaseFromPlayer>28</NumberOfItemsToPurchaseFromPlayer>
+                <NumberOfItemsToSellToPlayer>3</NumberOfItemsToSellToPlayer>
+                <NumberOfItemsToPurchaseFromPlayer>4</NumberOfItemsToPurchaseFromPlayer>
                 <IsFree>false</IsFree>
               </MenuItem>
             </Items>
@@ -46787,10 +46831,10 @@
                 <SubPrice>1</SubPrice>
                 <SubAmount>30</SubAmount>
                 <MinimumPurchaseAmount>1</MinimumPurchaseAmount>
-                <MaximumPurchaseAmount>28</MaximumPurchaseAmount>
+                <MaximumPurchaseAmount>3</MaximumPurchaseAmount>
                 <PurchaseIncrement>1</PurchaseIncrement>
-                <NumberOfItemsToSellToPlayer>28</NumberOfItemsToSellToPlayer>
-                <NumberOfItemsToPurchaseFromPlayer>32</NumberOfItemsToPurchaseFromPlayer>
+                <NumberOfItemsToSellToPlayer>3</NumberOfItemsToSellToPlayer>
+                <NumberOfItemsToPurchaseFromPlayer>4</NumberOfItemsToPurchaseFromPlayer>
                 <IsFree>false</IsFree>
               </MenuItem>
               <MenuItem>
@@ -46848,10 +46892,10 @@
                 <SubPrice>1</SubPrice>
                 <SubAmount>30</SubAmount>
                 <MinimumPurchaseAmount>1</MinimumPurchaseAmount>
-                <MaximumPurchaseAmount>24</MaximumPurchaseAmount>
+                <MaximumPurchaseAmount>3</MaximumPurchaseAmount>
                 <PurchaseIncrement>1</PurchaseIncrement>
-                <NumberOfItemsToSellToPlayer>24</NumberOfItemsToSellToPlayer>
-                <NumberOfItemsToPurchaseFromPlayer>28</NumberOfItemsToPurchaseFromPlayer>
+                <NumberOfItemsToSellToPlayer>3</NumberOfItemsToSellToPlayer>
+                <NumberOfItemsToPurchaseFromPlayer>4</NumberOfItemsToPurchaseFromPlayer>
                 <IsFree>false</IsFree>
               </MenuItem>
               <MenuItem>
@@ -46892,10 +46936,10 @@
                 <SubPrice>1</SubPrice>
                 <SubAmount>30</SubAmount>
                 <MinimumPurchaseAmount>1</MinimumPurchaseAmount>
-                <MaximumPurchaseAmount>20</MaximumPurchaseAmount>
+                <MaximumPurchaseAmount>6</MaximumPurchaseAmount>
                 <PurchaseIncrement>1</PurchaseIncrement>
-                <NumberOfItemsToSellToPlayer>20</NumberOfItemsToSellToPlayer>
-                <NumberOfItemsToPurchaseFromPlayer>24</NumberOfItemsToPurchaseFromPlayer>
+                <NumberOfItemsToSellToPlayer>6</NumberOfItemsToSellToPlayer>
+                <NumberOfItemsToPurchaseFromPlayer>9</NumberOfItemsToPurchaseFromPlayer>
                 <IsFree>false</IsFree>
               </MenuItem>
             </Items>
